@@ -3,6 +3,7 @@ header {
   background-color: $--secondary-site-color;
   padding-top: 50px;
   padding-bottom: 25px;
+
   .navigation {
     background-color: $--nav-bg-color;
 
@@ -13,7 +14,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: none;
+        margin: 0;
 
         li {
           display: inline;
