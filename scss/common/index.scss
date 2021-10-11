@@ -1,4 +1,6 @@
-@import "reset";
-@import "variables";
-@import "fonts";
-@import "common";
+@import "./reset";
+@import "./variables";
+@import "./extend";
+@import "./mixins";
+@import "./fonts";
+@import "./common";

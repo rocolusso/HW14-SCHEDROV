@@ -79,6 +79,35 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.block-reviews .block-reviews_content .reviews-content_left a:hover, .block-reviews .block-reviews_content .reviews-content_left a {
+  padding: 15px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.subscribe .subscribe-form form a:hover, .subscribe .subscribe-form form a {
+  margin: 0 20px;
+  text-decoration: none;
+  padding: 15px 64px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact .contact-form .contact-info form .submit-btn:hover, .contact .contact-form .contact-info form .submit-btn {
+  text-decoration: none;
+  padding: 15px 64px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -199,26 +228,12 @@ header .navigation nav ul li a:hover {
 .block-reviews .block-reviews_content .reviews-content_left a {
   background-color: white;
   color: red;
-  padding: 15px 64px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 40px;
-  border-radius: 10px;
   border: 2px solid red;
 }
 .block-reviews .block-reviews_content .reviews-content_left a:hover {
   background-color: red;
   color: white;
-  padding: 15px 64px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
   transition: 0.3s;
-  margin-top: 40px;
-  border-radius: 10px;
   border: 2px solid transparent;
 }
 .block-reviews .block-reviews_content .reviews-content_right {
@@ -248,10 +263,10 @@ header .navigation nav ul li a:hover {
   text-align: center;
   padding-bottom: 30px;
 }
-.feature .feauter_text .feauter_zagolovok {
+.feature .feauter_text .feauter_title {
   padding-top: 20px;
 }
-.feature .feauter_text .feauter_podzagolovok {
+.feature .feauter_text .feauter_subtitle {
   width: 500px;
   margin: 0 auto;
   padding: 20px 0;
@@ -373,28 +388,15 @@ header .navigation nav ul li a:hover {
   padding-left: 20px;
 }
 .subscribe .subscribe-form form a {
-  margin: 0 20px;
-  text-decoration: none;
   background-color: red;
   color: white;
-  padding: 15px 64px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
   border: 2px solid transparent;
 }
 .subscribe .subscribe-form form a:hover {
-  margin: 0 20px;
-  text-decoration: none;
   background-color: #f5f0dd;
   color: red;
-  padding: 15px 64px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
   border: 2px solid red;
+  transition: 0.3s;
 }
 
 .contact {
@@ -466,26 +468,15 @@ header .navigation nav ul li a:hover {
 }
 .contact .contact-form .contact-info form .submit-btn {
   width: 100%;
-  text-decoration: none;
   background-color: red;
   color: white;
-  padding: 15px 64px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
   border: 2px solid transparent;
 }
 .contact .contact-form .contact-info form .submit-btn:hover {
-  text-decoration: none;
   background-color: white;
   color: red;
-  padding: 15px 64px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
   border: 2px solid red;
+  transition: 0.3s;
 }
 .contact .contact-form .contact-about {
   width: calc(40% - 100px);

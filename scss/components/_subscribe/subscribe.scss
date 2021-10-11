@@ -26,30 +26,18 @@
       }
 
       a {
-        margin: 0 20px;
-        text-decoration: none;
+        @extend %subscribe-btn;
         background-color: red;
         color: white;
-        padding: 15px 64px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 10px;
         border: 2px solid transparent;
 
         &:hover {
 
-          margin: 0 20px;
-          text-decoration: none;
+          @extend %subscribe-btn;
           background-color: #f5f0dd;
           color: $--third-site-color;
-          padding: 15px 64px;
-          text-align: center;
-          display: inline-block;
-          font-size: 16px;
-          border-radius: 10px;
           border: 2px solid $--third-site-color;
-
+          transition: .3s;
 
         }
       }

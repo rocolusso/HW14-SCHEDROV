@@ -97,32 +97,17 @@
 
         .submit-btn {
           width: 100%;
-
-
-          text-decoration: none;
-          background-color: red;
+          @extend %submit-btn;
+          background-color: $--third-site-color;
           color: $--main-site-color;
-          padding: 15px 64px;
-          text-align: center;
-          display: inline-block;
-          font-size: 16px;
-          border-radius: 10px;
           border: 2px solid transparent;
 
           &:hover {
-
-
-            text-decoration: none;
+            @extend %submit-btn;
             background-color: $--main-site-color;
             color: $--third-site-color;
-            padding: 15px 64px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 10px;
             border: 2px solid $--third-site-color;
-
-
+            transition: .3s;
           }
 
 

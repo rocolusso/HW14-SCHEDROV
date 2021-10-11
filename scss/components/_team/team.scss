@@ -89,11 +89,7 @@
 
       }
        .team_gallary {
-         margin-top: 100px;
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-         align-items: center;
+         @include team(100px);
 
 
          .team_gallary_item{

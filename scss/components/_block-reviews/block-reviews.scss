@@ -25,26 +25,14 @@
       a {
         background-color: $--main-site-color;
         color: $--third-site-color;
-        padding: 15px 64px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin-top: 40px;
-        border-radius: 10px;
+        @extend %review-btn;
         border: 2px solid $--third-site-color;
 
         &:hover {
           background-color: $--third-site-color;
           color: $--main-site-color;
-          padding: 15px 64px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
+          @extend %review-btn;
           transition: .3s;
-          margin-top: 40px;
-          border-radius: 10px;
           border: 2px solid transparent;
         }
       }
