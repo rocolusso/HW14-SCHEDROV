@@ -79,33 +79,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.block-reviews .block-reviews_content .reviews-content_left a:hover, .block-reviews .block-reviews_content .reviews-content_left a {
-  padding: 15px 64px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 40px;
+.contact .contact-form .contact-info form textarea, .contact .contact-form .contact-info form .input-field input {
+  outline: none;
+  border: none;
   border-radius: 10px;
-}
-
-.subscribe .subscribe-form form a:hover, .subscribe .subscribe-form form a {
-  margin: 0 20px;
-  text-decoration: none;
-  padding: 15px 64px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.contact .contact-form .contact-info form .submit-btn:hover, .contact .contact-form .contact-info form .submit-btn {
-  text-decoration: none;
-  padding: 15px 64px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
+  padding: 20px 0 20px 40px;
 }
 
 body {
@@ -130,7 +108,6 @@ h2 {
 header {
   background-color: #f4f3f1;
   padding-top: 50px;
-  padding-bottom: 25px;
 }
 header .navigation {
   background-color: #303030;
@@ -162,7 +139,7 @@ header .navigation nav ul li a:hover {
 
 .block-banner {
   background-color: #f4f3f1;
-  padding: 100px;
+  padding: 100px 0;
 }
 .block-banner .block-banner_content {
   display: flex;
@@ -184,8 +161,8 @@ header .navigation nav ul li a:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 5px;
   margin-top: 40px;
-  border-radius: 10px;
   border: 2px solid transparent;
 }
 .block-banner .block-banner_content .banner-content_left a:hover {
@@ -196,15 +173,17 @@ header .navigation nav ul li a:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 5px;
   margin-top: 40px;
   transition: 0.3s;
-  border-radius: 10px;
   border: 2px solid red;
 }
 .block-banner .block-banner_content .banner-content_right {
   width: 50%;
-  -webkit-box-shadow: 0px 4px 58px 7px rgba(34, 60, 80, 0.29);
-  -moz-box-shadow: 0px 4px 58px 7px rgba(34, 60, 80, 0.29);
+}
+.block-banner .block-banner_content .banner-content_right iframe {
+  width: 100%;
+  height: 100%;
   box-shadow: 0px 4px 58px 7px rgba(34, 60, 80, 0.29);
 }
 
@@ -228,11 +207,25 @@ header .navigation nav ul li a:hover {
 .block-reviews .block-reviews_content .reviews-content_left a {
   background-color: white;
   color: red;
+  padding: 15px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 40px;
   border: 2px solid red;
 }
 .block-reviews .block-reviews_content .reviews-content_left a:hover {
   background-color: red;
   color: white;
+  padding: 15px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 40px;
   transition: 0.3s;
   border: 2px solid transparent;
 }
@@ -314,7 +307,7 @@ header .navigation nav ul li a:hover {
   padding-top: 20px;
 }
 .team .team_text .team_podzagolovok {
-  width: 500px;
+  max-width: 500px;
   padding: 20px 0;
 }
 .team .team_text .line {
@@ -331,7 +324,7 @@ header .navigation nav ul li a:hover {
   width: 68%;
 }
 .team .team-gallary .team_about .team_about_podzagolovok {
-  width: 620px;
+  max-width: 620px;
   padding: 20px 0;
 }
 .team .team-gallary .team_about .team_tabs {
@@ -359,6 +352,19 @@ header .navigation nav ul li a:hover {
 }
 .team .team-gallary .team_about .team_gallary .team_gallary_item {
   width: 190px;
+  height: 190px;
+  background-color: #f5efdb;
+}
+.team .team-gallary .team_about .team_gallary .team_gallary_item .team-item-title {
+  display: none;
+}
+.team .team-gallary .team_about .team_gallary .team_gallary_item:hover .team-item-title {
+  margin-top: 160px;
+  display: block;
+  padding: 5px 0 5px 40px;
+  background-color: #79776d;
+  color: white;
+  text-transform: uppercase;
 }
 
 .subscribe {
@@ -370,7 +376,7 @@ header .navigation nav ul li a:hover {
   color: white;
 }
 .subscribe .subscribe-text p {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -386,13 +392,28 @@ header .navigation nav ul li a:hover {
   margin: 0 20px;
   border: none;
   padding-left: 20px;
+  border-radius: 5px;
 }
 .subscribe .subscribe-form form a {
+  padding: 15px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 20px;
   background-color: red;
   color: white;
   border: 2px solid transparent;
 }
 .subscribe .subscribe-form form a:hover {
+  padding: 15px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 20px;
   background-color: #f5f0dd;
   color: red;
   border: 2px solid red;
@@ -451,28 +472,33 @@ header .navigation nav ul li a:hover {
 .contact .contact-form .contact-info form .input-field input {
   width: 100%;
   background-color: #f0f0f0;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  padding: 10px;
 }
 .contact .contact-form .contact-info form textarea {
-  margin: 20px 0;
+  margin: 40px 0;
   width: 100%;
   height: 300px;
   resize: none;
   background-color: #f0f0f0;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
 }
 .contact .contact-form .contact-info form .submit-btn {
   width: 100%;
+  padding: 15px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
   background-color: red;
   color: white;
   border: 2px solid transparent;
 }
 .contact .contact-form .contact-info form .submit-btn:hover {
+  padding: 15px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
   background-color: white;
   color: red;
   border: 2px solid red;
@@ -499,19 +525,19 @@ header .navigation nav ul li a:hover {
 footer {
   background-color: #333;
   color: white;
-  height: 100px;
   align-items: center;
 }
 footer .footer-wrapper {
-  padding-top: 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
 }
-footer .footer-wrapper .social {
+footer .footer-wrapper .social ul {
+  list-style: none;
   display: flex;
 }
-footer .footer-wrapper .social .social-item {
+footer .footer-wrapper .social ul li .social-item {
   margin: 0 10px;
   width: 30px;
   height: 30px;
